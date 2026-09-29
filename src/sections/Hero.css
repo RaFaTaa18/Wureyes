@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 6% 80px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85")
+    center / cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.hero-label {
+  margin-bottom: 24px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.hero h1 span {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-description {
+  max-width: 550px;
+  margin: 30px 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-primary,
+.hero-secondary {
+  padding: 14px 24px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.hero-primary {
+  background: #ffffff;
+  color: #111111;
+}
+
+.hero-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.hero-secondary:hover {
+  background: #ffffff;
+  color: #111111;
+}

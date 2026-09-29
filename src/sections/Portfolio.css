@@ -1,0 +1,139 @@
+.portfolio-section {
+  padding: 120px 6%;
+  background: #f3f0ea;
+  color: #111111;
+}
+
+.portfolio-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.portfolio-heading p:first-child {
+  margin-bottom: 12px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.portfolio-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.portfolio-intro {
+  max-width: 360px;
+
+  margin: 0;
+
+  line-height: 1.7;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 24px;
+}
+
+.portfolio-card {
+  overflow: hidden;
+}
+
+.portfolio-image {
+  position: relative;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+  background: #ddd;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.04);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  padding: 8px 14px;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.portfolio-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-top: 18px;
+}
+
+.portfolio-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 1.3rem;
+}
+
+.portfolio-info p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  color: rgba(17, 17, 17, 0.55);
+}
+
+.portfolio-date {
+  font-size: 0.75rem;
+  color: rgba(17, 17, 17, 0.45);
+}
+
+.portfolio-loading,
+.portfolio-empty {
+  padding: 80px 0;
+  text-align: center;
+
+  color: rgba(17, 17, 17, 0.5);
+}
+
+@media (max-width: 700px) {
+  .portfolio-heading {
+    display: block;
+  }
+
+  .portfolio-intro {
+    margin-top: 25px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

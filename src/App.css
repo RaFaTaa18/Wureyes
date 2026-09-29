@@ -1,0 +1,33 @@
+#root {
+  min-height: 100vh;
+}
+
+.placeholder-section {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 100px 6%;
+
+  background: #181818;
+  color: #ffffff;
+}
+
+.placeholder-section:nth-child(even) {
+  background: #0d0d0d;
+}
+
+.placeholder-section p {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.placeholder-section h2 {
+  margin: 15px 0 0;
+
+  font-size: clamp(3rem, 7vw, 7rem);
+  letter-spacing: -0.05em;
+}
